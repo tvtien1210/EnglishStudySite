@@ -12,21 +12,27 @@ GREY TEXT COLOR : #343a40;
 LIGHT COLOR: #2ad082;
 */
 
+* {
+  --light-color: #2ad082;
+  --main-color: #087f5b;
+  --grey-text-color: #343a40;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #343a40;
+  color: var(--grey-text-color);
 }
 
 a {
-  color: #2ad082;
+  color: var(--light-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #2ad082;
+  color: var(--light-color);
   text-decoration: none;
 }
 
@@ -101,7 +107,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2ad082;
+  background: var(--light-color);
   color: #fff;
 }
 
@@ -188,7 +194,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #2ad082;
+  color: var(--light-color);
 }
 
 .navbar .getstarted,
@@ -198,14 +204,14 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid #2ad082;
+  border: 2px solid var(--light-color);
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #2ad082;
+  background: var(--light-color);
 }
 
 .navbar .dropdown ul {
@@ -428,7 +434,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #2ad082;
+  background: var(--light-color);
 }
 
 #hero .btn-watch-video {
@@ -450,7 +456,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #2ad082;
+  color: var(--light-color);
 }
 
 #hero .animated {
@@ -736,11 +742,11 @@ section {
 }
 
 .why-us .accordion-list a.collapsed {
-  color: #343a40;
+  color: var(--grey-text-color);
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color: #2ad082;
+  color: var(--light-color);
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -785,7 +791,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: var(--main-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -822,7 +828,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 .skills .progress .skill .val {
@@ -839,7 +845,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #4668a2;
+  background-color: var(--light-color);
 }
 
 /*--------------------------------------------------------------
@@ -884,7 +890,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #2ad082;
+  color: var(--light-color);
 }
 
 /*--------------------------------------------------------------
@@ -1190,7 +1196,7 @@ img {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 .team .member span {
@@ -1236,13 +1242,13 @@ img {
 }
 
 .team .member .social a i {
-  color: #37517e;
+  color: var(--main-color);
   font-size: 16px;
   margin: 0 2px;
 }
 
 .team .member .social a:hover {
-  background: #47b2e4;
+  background: var(--light-color);
 }
 
 .team .member .social a:hover i {
@@ -1273,12 +1279,12 @@ img {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: #37517e;
+  color: var(--light-color);
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
@@ -1289,7 +1295,7 @@ img {
 }
 
 .pricing h4 span {
-  color: #47b2e4;
+  color: var(--light-color);
   font-size: 18px;
   display: block;
 }
@@ -1331,31 +1337,31 @@ img {
   display: inline-block;
   padding: 12px 35px;
   border-radius: 50px;
-  color: #47b2e4;
+  color: var(--light-color);
   transition: none;
   font-size: 16px;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   transition: 0.3s;
-  border: 1px solid #47b2e4;
+  border: 1px solid var(--light-color);
 }
 
 .pricing .buy-btn:hover {
-  background: #47b2e4;
+  background: var(--light-color);
   color: #fff;
 }
 
 .pricing .featured {
-  border-top-color: #47b2e4;
+  border-top-color: var(--light-color);
 }
 
 .pricing .featured .buy-btn {
-  background: #47b2e4;
+  background: var(--light-color);
   color: #fff;
 }
 
 .pricing .featured .buy-btn:hover {
-  background: #23a3df;
+  background: var(--light-color);
 }
 
 @media (max-width: 992px) {
@@ -1419,7 +1425,7 @@ img {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #47b2e4;
+  color: var(--main-color);
 }
 
 .faq .faq-list .icon-show,
@@ -1440,12 +1446,12 @@ img {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: var(--grey-text-color);
   transition: 0.3s;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #47b2e4;
+  color: var(--light-color);
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1466,8 +1472,8 @@ img {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid var(--light-color);
+  border-bottom: 3px solid var(--light-color);
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1476,7 +1482,7 @@ img {
 
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: var(--main-color);
   float: left;
   width: 44px;
   height: 44px;
@@ -1493,14 +1499,14 @@ img {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: var(--grey-text-color);
 }
 
 .contact .info .email p {
@@ -1534,14 +1540,14 @@ img {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: var(--light-color);
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid var(--light-color);
+  border-bottom: 3px solid var(--light-color);
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1630,7 +1636,8 @@ img {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #47b2e4;
+  background: var(--main-color);
+
   border: 0;
   padding: 12px 34px;
   color: #fff;
@@ -1639,7 +1646,7 @@ img {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #209dd8;
+  background: var(--light-color);
 }
 
 @keyframes animate-loading {
@@ -1699,7 +1706,7 @@ img {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #087f5b;
+  background: var(--main-color);
 }
 
 #footer .footer-newsletter {
@@ -1716,7 +1723,7 @@ img {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 #footer .footer-newsletter form {
@@ -1744,7 +1751,7 @@ img {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #47b2e4;
+  background: var(--main-color);
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1752,7 +1759,7 @@ img {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #209dd8;
+  background: var(--light-color);
 }
 
 #footer .footer-top {
@@ -1771,7 +1778,7 @@ img {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: var(--main-color);
 }
 
 #footer .footer-top .footer-contact p {
@@ -1785,7 +1792,7 @@ img {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: var(--main-color);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1802,7 +1809,7 @@ img {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #47b2e4;
+  color: var(--main-color);
   font-size: 18px;
   line-height: 1;
 }
@@ -1826,13 +1833,13 @@ img {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #47b2e4;
+  color: var(--light-color);
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #47b2e4;
+  background: var(--main-color);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1845,7 +1852,7 @@ img {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: var(--light-color);
   color: #fff;
   text-decoration: none;
 }
